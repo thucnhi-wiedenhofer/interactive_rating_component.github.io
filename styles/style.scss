@@ -1,0 +1,122 @@
+/* CSS général , all devices */
+
+//Colors
+$Orange: hsl(25, 97%, 53%);
+$White: hsl(0, 0%, 100%);
+$Light-Grey: hsl(217, 12%, 63%);
+$Medium-Grey: hsl(216, 12%, 54%);
+$Dark-Blue: hsl(213, 19%, 18%);
+$Very-Dark-Blue: hsl(216, 12%, 8%);
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Overpass", sans-serif;
+  background-color: black;
+}
+
+p {
+  color: $Light-Grey;
+  font-size: 15px;
+}
+
+h1 {
+  color: $White;
+  font-size: 28px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $Very-Dark-Blue;
+  width: 408px;
+  height: 416px;
+  border: none;
+  border-radius: 25px;
+  padding: 30px;
+  margin: 30px;
+}
+
+.circle-icon {
+  background: $Dark-Blue;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  padding: 10px;
+  position: relative;
+}
+
+.star-icon {
+  position: absolute;
+  left: 15px;
+  top: 14px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+}
+
+.rating-icon {
+  background: $Dark-Blue;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  padding: 10px;
+  position: relative;
+  margin-right: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.rating-icon:hover {
+  background-color: $Orange;
+  color: $White;
+}
+.rating-rank {
+  font-weight: bold;
+  position: relative;
+  top: -34px;
+}
+
+.btn {
+  background-color: $Orange;
+  color: $White;
+  font-size: 18px;
+  width: 340px;
+  height: 45px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin: auto;
+}
+
+.btn:hover {
+  background-color: $White;
+  color: $Orange;
+}
+
+.attribution {
+  color: $Light-Grey;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
