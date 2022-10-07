@@ -41,6 +41,7 @@ h1 {
   margin: 30px;
 }
 
+/* CSS Rating state start */
 .circle-icon {
   background: hsl(213deg, 19%, 18%);
   width: 45px;
@@ -62,6 +63,7 @@ h1 {
 .rating {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .rating-icon {
@@ -74,7 +76,6 @@ h1 {
   vertical-align: middle;
   padding: 10px;
   position: relative;
-  margin-right: 20px;
   margin-top: 30px;
   cursor: pointer;
 }
@@ -114,4 +115,65 @@ h1 {
 
 .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+/* CSS Thank you state start */
+.thank-you {
+  align-items: center;
+  text-align: center;
+}
+
+.rating-result {
+  background-color: hsl(213deg, 19%, 18%);
+  color: hsl(25deg, 97%, 53%);
+  width: 190px;
+  height: 30px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin: auto;
+  padding-top: 7px;
+}
+
+.img-card {
+  width: 162px;
+  height: auto;
+  margin: 10px;
+}
+
+/* CSS Mobile */
+@media screen and (max-width: 376px) {
+  .card {
+    width: 325px;
+    height: 359px;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 23.5px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .rating-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .star-icon {
+    width: 15px;
+    height: 14px;
+  }
+  .rating-rank {
+    font-weight: bold;
+    position: relative;
+    top: -38px;
+  }
+  .rating-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+  .btn {
+    font-size: 16px;
+    width: 279px;
+  }
 }/*# sourceMappingURL=style.css.map */
