@@ -67,6 +67,7 @@ h1 {
 }
 
 .rating-icon {
+  color: hsl(217deg, 12%, 63%);
   background: hsl(213deg, 19%, 18%);
   width: 50px;
   height: 50px;
@@ -78,6 +79,24 @@ h1 {
   position: relative;
   margin-top: 30px;
   cursor: pointer;
+  z-index: 1;
+}
+.rating-icon:active::after, .rating-icon:focus::after {
+  opacity: 1;
+}
+.rating-icon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 
 .rating-icon:hover {
