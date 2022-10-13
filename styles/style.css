@@ -37,7 +37,7 @@ h1 {
   height: 416px;
   border: none;
   border-radius: 25px;
-  padding: 30px;
+  padding: 34px;
   margin: 30px;
 }
 
@@ -67,7 +67,7 @@ h1 {
 }
 
 .rating-icon {
-  color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
   background: hsl(213deg, 19%, 18%);
   width: 50px;
   height: 50px;
@@ -92,7 +92,6 @@ h1 {
   bottom: 0;
   left: 0;
   background-color: hsl(217deg, 12%, 63%);
-  color: hsl(0deg, 0%, 100%);
   border-radius: 50%;
   opacity: 0;
   z-index: -1;
@@ -101,7 +100,6 @@ h1 {
 
 .rating-icon:hover {
   background-color: hsl(25deg, 97%, 53%);
-  color: hsl(0deg, 0%, 100%);
 }
 
 .rating-rank {
@@ -137,7 +135,8 @@ h1 {
 }
 
 /* CSS Thank you state start */
-.thank-you {
+#modal_thank_you {
+  display: none;
   align-items: center;
   text-align: center;
 }
@@ -150,13 +149,18 @@ h1 {
   border-radius: 40px;
   cursor: pointer;
   margin: auto;
-  padding-top: 7px;
+  padding: 10px 15px;
 }
 
 .img-card {
   width: 162px;
   height: auto;
-  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.thank-you {
+  margin-top: 40px;
 }
 
 /* CSS Mobile */
@@ -166,6 +170,10 @@ h1 {
     height: 359px;
     border-radius: 20px;
     padding: 20px;
+  }
+  .img-card {
+    width: 130px;
+    margin-bottom: 30px;
   }
   h1 {
     font-size: 23.5px;

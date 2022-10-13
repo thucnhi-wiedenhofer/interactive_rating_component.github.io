@@ -25,7 +25,7 @@
   </head>
   <body>
     <!-- Rating state start -->
-    <div class="card">
+    <div id="modal_rating" class="card">
       <span class="circle-icon">
         <img class="star-icon" src="./images/icon-star.svg" alt="star icon" />
       </span>
@@ -52,34 +52,37 @@
         </button>
       </div>
 
-      <button class="btn">SUBMIT</button>
+      <button onclick="launchThankYouModal()" class="btn">SUBMIT</button>
     </div>
 
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
 
-    <div class="card thank-you">
+    <div id="modal_thank_you" class="card">
       <img
         class="img-card"
         src="./images/illustration-thank-you.svg"
         alt="thank you"
       />
-      <span class="rating-result"> You selected 4 out of 5 </span>
-      <h1>Thank you!</h1>
-      <p>
-        We appreciate you taking the time to give a rating. If you ever need
-        more support, don’t hesitate to get in touch!
-      </p>
+      <div class="card-text">
+        <span class="rating-result"> You selected 4 out of 5 </span>
+        <h1 class="thank-you">Thank you!</h1>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
     </div>
 
     <!-- Thank you state end -->
 
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </footer>
+    <script src="index.js"></script>
   </body>
 </html>
