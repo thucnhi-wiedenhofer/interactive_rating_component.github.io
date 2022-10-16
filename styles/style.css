@@ -66,46 +66,35 @@ h1 {
   justify-content: space-between;
 }
 
-.rating-icon {
-  color: hsl(0deg, 0%, 100%);
+input[type=radio].rating-icon {
+  display: none;
+}
+
+input[type=radio].rating-icon + label {
+  color: hsl(217deg, 12%, 63%);
   background: hsl(213deg, 19%, 18%);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   text-align: center;
-  line-height: 100px;
+  line-height: 30px;
   vertical-align: middle;
   padding: 10px;
   position: relative;
   margin-top: 30px;
   cursor: pointer;
-  z-index: 1;
-}
-.rating-icon:active::after, .rating-icon:focus::after {
-  opacity: 1;
-}
-.rating-icon::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: hsl(217deg, 12%, 63%);
-  border-radius: 50%;
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 250ms;
-}
-
-.rating-icon:hover {
-  background-color: hsl(25deg, 97%, 53%);
-}
-
-.rating-rank {
   font-weight: bold;
-  position: relative;
-  top: -34px;
+  top: -10px;
+}
+
+input[type=radio].rating-icon:checked + label {
+  background-color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+input[type=radio].rating-icon + label:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
 }
 
 .btn {
@@ -116,7 +105,7 @@ h1 {
   height: 45px;
   border-radius: 40px;
   cursor: pointer;
-  margin: auto;
+  margin: 20px 0;
 }
 
 .btn:hover {
